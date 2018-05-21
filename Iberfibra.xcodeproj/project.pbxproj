@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2320E420B21FC90033AD79 /* AppDelegate.swift */; };
+		5F23210720B22C210033AD79 /* PanelOperativoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210620B22C210033AD79 /* PanelOperativoView.swift */; };
+		5F23210920B22C520033AD79 /* ConfiguracionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210820B22C520033AD79 /* ConfiguracionView.swift */; };
+		5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210D20B2339C0033AD79 /* Configuracion.swift */; };
+		5F23211020B378670033AD79 /* ConectarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210F20B378670033AD79 /* ConectarView.swift */; };
 		5F59F18820ACF3E100118682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F59F18620ACF3E100118682 /* Main.storyboard */; };
 		5F59F18A20ACF3E300118682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F59F18920ACF3E300118682 /* Assets.xcassets */; };
 		5F59F18D20ACF3E300118682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F59F18B20ACF3E300118682 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F2320E420B21FC90033AD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F23210620B22C210033AD79 /* PanelOperativoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelOperativoView.swift; sourceTree = "<group>"; };
+		5F23210820B22C520033AD79 /* ConfiguracionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionView.swift; sourceTree = "<group>"; };
+		5F23210D20B2339C0033AD79 /* Configuracion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracion.swift; sourceTree = "<group>"; };
+		5F23210F20B378670033AD79 /* ConectarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConectarView.swift; sourceTree = "<group>"; };
 		5F59F17F20ACF3E100118682 /* Iberfibra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iberfibra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F59F18720ACF3E100118682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F59F18920ACF3E300118682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F2320E220B21F880033AD79 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5F2320E420B21FC90033AD79 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		5F2320E320B21F9D0033AD79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F23210620B22C210033AD79 /* PanelOperativoView.swift */,
+				5F23210820B22C520033AD79 /* ConfiguracionView.swift */,
+				5F23210F20B378670033AD79 /* ConectarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F23210C20B233850033AD79 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5F23210D20B2339C0033AD79 /* Configuracion.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		5F59F17620ACF3E100118682 = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +86,9 @@
 		5F59F18120ACF3E100118682 /* Iberfibra */ = {
 			isa = PBXGroup;
 			children = (
+				5F23210C20B233850033AD79 /* Config */,
+				5F2320E320B21F9D0033AD79 /* Views */,
+				5F2320E220B21F880033AD79 /* Delegates */,
 				5F59F18620ACF3E100118682 /* Main.storyboard */,
 				5F59F18920ACF3E300118682 /* Assets.xcassets */,
 				5F59F18B20ACF3E300118682 /* LaunchScreen.storyboard */,
@@ -90,6 +129,7 @@
 				TargetAttributes = {
 					5F59F17E20ACF3E100118682 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -129,6 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F23211020B378670033AD79 /* ConectarView.swift in Sources */,
+				5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */,
+				5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */,
+				5F23210920B22C520033AD79 /* ConfiguracionView.swift in Sources */,
+				5F23210720B22C210033AD79 /* PanelOperativoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LYY6BZ69B;
 				INFOPLIST_FILE = Iberfibra/Info.plist;
@@ -281,6 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CodeNationDev.Iberfibra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LYY6BZ69B;
 				INFOPLIST_FILE = Iberfibra/Info.plist;
