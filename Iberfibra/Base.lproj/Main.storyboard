@@ -117,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAG-As-p7t">
-                                <rect key="frame" x="31" y="35" width="247" height="63"/>
+                                <rect key="frame" x="31" y="50" width="247" height="48"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Bluetooth">
                                         <attributes>
@@ -135,7 +135,7 @@
                             <constraint firstItem="hxU-uv-J0D" firstAttribute="trailing" secondItem="IAG-As-p7t" secondAttribute="trailing" constant="97" id="NiG-PJ-yu8"/>
                             <constraint firstItem="hxU-uv-J0D" firstAttribute="bottom" secondItem="IAG-As-p7t" secondAttribute="bottom" constant="520" id="ovr-j7-Zel"/>
                             <constraint firstItem="IAG-As-p7t" firstAttribute="leading" secondItem="0b6-Wq-e4s" secondAttribute="leadingMargin" constant="15" id="sqh-gQ-5PN"/>
-                            <constraint firstItem="IAG-As-p7t" firstAttribute="top" secondItem="hxU-uv-J0D" secondAttribute="top" constant="15" id="zaM-t0-kRZ"/>
+                            <constraint firstItem="IAG-As-p7t" firstAttribute="top" secondItem="hxU-uv-J0D" secondAttribute="top" constant="30" id="zaM-t0-kRZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hxU-uv-J0D"/>
                     </view>
