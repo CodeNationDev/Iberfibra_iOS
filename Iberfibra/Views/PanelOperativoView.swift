@@ -12,7 +12,8 @@ class PanelOpeerativoView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        obtenerConfig()
+        
+    
     }
     
     override func didReceiveMemoryWarning() {
