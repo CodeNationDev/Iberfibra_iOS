@@ -15,13 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mainVC = PanelOpeerativoView()
-        if let window = window {
-            window.backgroundColor = UIColor.gray
-            window.rootViewController = mainVC
-            window.makeKeyAndVisible()
-        }
+        window?.makeKeyAndVisible()
+        
+        let main = PanelViewController()
+        main.tabBarItem = UITabBarItem(title: "Panel", image: #imageLiteral(resourceName: "panelIcon"), tag: 0)
+        
+        
+        let configuracion = ConfiguracionViewController()
+        configuracion.tabBarItem = UITabBarItem(title: "Configuración", image: #imageLiteral(resourceName: "iphoneXconfig"), tag: 1)
+        
+        let conectar = ConectarViewController()
+        conectar.tabBarItem = UITabBarItem(title: "Conectar", image: #imageLiteral(resourceName: "bluetooth"), tag: 2)
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [main, configuracion, conectar]
+        
+        window?.rootViewController = tabBarController
+       
         return true
     }
     

@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2320E420B21FC90033AD79 /* AppDelegate.swift */; };
-		5F23210720B22C210033AD79 /* PanelOperativoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210620B22C210033AD79 /* PanelOperativoView.swift */; };
-		5F23210920B22C520033AD79 /* ConfiguracionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210820B22C520033AD79 /* ConfiguracionView.swift */; };
 		5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210D20B2339C0033AD79 /* Configuracion.swift */; };
-		5F23211020B378670033AD79 /* ConectarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210F20B378670033AD79 /* ConectarView.swift */; };
-		5F23211620B4BAFF0033AD79 /* Configuracion.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F23211520B4BAFF0033AD79 /* Configuracion.xib */; };
-		5F23211820B4BC7B0033AD79 /* Conectar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F23211720B4BC7B0033AD79 /* Conectar.xib */; };
-		5F23211A20B4BDAE0033AD79 /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F23211920B4BDAE0033AD79 /* Panel.xib */; };
+		5F23211F20B60DDE0033AD79 /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23211D20B60DDE0033AD79 /* PanelViewController.swift */; };
+		5F23212020B60DDE0033AD79 /* PanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F23211E20B60DDE0033AD79 /* PanelViewController.xib */; };
+		5F23212320B60EE00033AD79 /* ConfiguracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23212120B60EE00033AD79 /* ConfiguracionViewController.swift */; };
+		5F23212420B60EE00033AD79 /* ConfiguracionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F23212220B60EE00033AD79 /* ConfiguracionViewController.xib */; };
+		5F23212720B60F990033AD79 /* ConectarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23212520B60F990033AD79 /* ConectarViewController.swift */; };
+		5F23212820B60F990033AD79 /* ConectarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F23212620B60F990033AD79 /* ConectarViewController.xib */; };
 		5F59F18A20ACF3E300118682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F59F18920ACF3E300118682 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F2320E420B21FC90033AD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F23210620B22C210033AD79 /* PanelOperativoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelOperativoView.swift; sourceTree = "<group>"; };
-		5F23210820B22C520033AD79 /* ConfiguracionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionView.swift; sourceTree = "<group>"; };
 		5F23210D20B2339C0033AD79 /* Configuracion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracion.swift; sourceTree = "<group>"; };
-		5F23210F20B378670033AD79 /* ConectarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConectarView.swift; sourceTree = "<group>"; };
-		5F23211520B4BAFF0033AD79 /* Configuracion.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Configuracion.xib; sourceTree = "<group>"; };
-		5F23211720B4BC7B0033AD79 /* Conectar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Conectar.xib; sourceTree = "<group>"; };
-		5F23211920B4BDAE0033AD79 /* Panel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Panel.xib; sourceTree = "<group>"; };
+		5F23211D20B60DDE0033AD79 /* PanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
+		5F23211E20B60DDE0033AD79 /* PanelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PanelViewController.xib; sourceTree = "<group>"; };
+		5F23212120B60EE00033AD79 /* ConfiguracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionViewController.swift; sourceTree = "<group>"; };
+		5F23212220B60EE00033AD79 /* ConfiguracionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfiguracionViewController.xib; sourceTree = "<group>"; };
+		5F23212520B60F990033AD79 /* ConectarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConectarViewController.swift; sourceTree = "<group>"; };
+		5F23212620B60F990033AD79 /* ConectarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConectarViewController.xib; sourceTree = "<group>"; };
 		5F59F17F20ACF3E100118682 /* Iberfibra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iberfibra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F59F18920ACF3E300118682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F59F18E20ACF3E400118682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,9 +54,9 @@
 		5F2320E320B21F9D0033AD79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5F23210620B22C210033AD79 /* PanelOperativoView.swift */,
-				5F23210820B22C520033AD79 /* ConfiguracionView.swift */,
-				5F23210F20B378670033AD79 /* ConectarView.swift */,
+				5F23211D20B60DDE0033AD79 /* PanelViewController.swift */,
+				5F23212120B60EE00033AD79 /* ConfiguracionViewController.swift */,
+				5F23212520B60F990033AD79 /* ConectarViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -72,9 +72,9 @@
 		5F23211420B4BABD0033AD79 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				5F23211520B4BAFF0033AD79 /* Configuracion.xib */,
-				5F23211720B4BC7B0033AD79 /* Conectar.xib */,
-				5F23211920B4BDAE0033AD79 /* Panel.xib */,
+				5F23211E20B60DDE0033AD79 /* PanelViewController.xib */,
+				5F23212220B60EE00033AD79 /* ConfiguracionViewController.xib */,
+				5F23212620B60F990033AD79 /* ConectarViewController.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -167,10 +167,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F23211620B4BAFF0033AD79 /* Configuracion.xib in Resources */,
+				5F23212420B60EE00033AD79 /* ConfiguracionViewController.xib in Resources */,
 				5F59F18A20ACF3E300118682 /* Assets.xcassets in Resources */,
-				5F23211820B4BC7B0033AD79 /* Conectar.xib in Resources */,
-				5F23211A20B4BDAE0033AD79 /* Panel.xib in Resources */,
+				5F23212820B60F990033AD79 /* ConectarViewController.xib in Resources */,
+				5F23212020B60DDE0033AD79 /* PanelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,11 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F23211020B378670033AD79 /* ConectarView.swift in Sources */,
+				5F23212320B60EE00033AD79 /* ConfiguracionViewController.swift in Sources */,
+				5F23212720B60F990033AD79 /* ConectarViewController.swift in Sources */,
 				5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */,
 				5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */,
-				5F23210920B22C520033AD79 /* ConfiguracionView.swift in Sources */,
-				5F23210720B22C210033AD79 /* PanelOperativoView.swift in Sources */,
+				5F23211F20B60DDE0033AD79 /* PanelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

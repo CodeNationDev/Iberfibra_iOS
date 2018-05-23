@@ -10,7 +10,7 @@ import Foundation
 
 func obtenerConfig(){
     
-    let defaults = UserDefaults.standard
+    
     
     
     
