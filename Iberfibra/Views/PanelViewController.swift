@@ -7,29 +7,30 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class PanelViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool){
+        
+        if UserDefaultsFunctions().recuperaObjetoTexto(clave: "panel") != nil{
+            
+        }
+        else{
+            let alert: UIAlertController = UIAlertController(title: "Aviso",message: "No se ha encontrado panel vinculado, por favor, vaya a la pestaña 'Conectar y vincule uno'", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "Vamos!", style: .default, handler: { action in
+                self.tabBarController?.selectedIndex = 2
+            }))
+            
+            self.present(alert,animated: true)
+        }
     }
-    */
 
 }

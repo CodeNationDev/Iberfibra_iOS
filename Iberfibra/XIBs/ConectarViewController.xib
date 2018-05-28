@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConectarViewController" customModule="Iberfibra" customModuleProvider="target">
+            <connections>
+                <outlet property="tbDevices" destination="Ydq-Kz-gUl" id="OCi-eJ-F1O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCS-Xe-fdF">
+                    <rect key="frame" x="26" y="60" width="168" height="40.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Bluetooth">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="36" name="Arial-BoldMT"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ydq-Kz-gUl" userLabel="tbDevices">
+                    <rect key="frame" x="0.0" y="224" width="375" height="342"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLp-xK-aSK">
+                    <rect key="frame" x="16" y="584" width="63" height="30"/>
+                    <state key="normal" title="Escanear"/>
+                    <connections>
+                        <action selector="EscanearDispositivos:" destination="-1" eventType="touchUpInside" id="WhQ-Ox-orD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eLp-xK-aSK" firstAttribute="top" secondItem="Ydq-Kz-gUl" secondAttribute="bottom" constant="18" id="0Jj-kh-GWO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eLp-xK-aSK" secondAttribute="trailing" constant="296" id="4de-Pz-vI1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eLp-xK-aSK" secondAttribute="bottom" constant="53" id="6IK-ra-iil"/>
+                <constraint firstItem="Ydq-Kz-gUl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Prb-ZF-FUW"/>
+                <constraint firstItem="jCS-Xe-fdF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="TaI-SN-X8L"/>
+                <constraint firstItem="jCS-Xe-fdF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="fmn-rO-vim"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ydq-Kz-gUl" secondAttribute="trailing" id="u11-1t-maa"/>
+                <constraint firstItem="Ydq-Kz-gUl" firstAttribute="top" secondItem="jCS-Xe-fdF" secondAttribute="bottom" constant="123.5" id="wAa-0b-6qe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="39.5" y="93.5"/>
+        </view>
+    </objects>
+</document>

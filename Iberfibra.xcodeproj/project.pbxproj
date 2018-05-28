@@ -16,6 +16,8 @@
 		5F23212720B60F990033AD79 /* ConectarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23212520B60F990033AD79 /* ConectarViewController.swift */; };
 		5F23212820B60F990033AD79 /* ConectarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F23212620B60F990033AD79 /* ConectarViewController.xib */; };
 		5F59F18A20ACF3E300118682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F59F18920ACF3E300118682 /* Assets.xcassets */; };
+		5F80270420B7631900153680 /* UserDefaultsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F80270320B7631900153680 /* UserDefaultsFunctions.swift */; };
+		5F80270720B8B5B800153680 /* Elementos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F80270620B8B5B800153680 /* Elementos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5F59F17F20ACF3E100118682 /* Iberfibra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iberfibra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F59F18920ACF3E300118682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F59F18E20ACF3E400118682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F80270320B7631900153680 /* UserDefaultsFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsFunctions.swift; sourceTree = "<group>"; };
+		5F80270620B8B5B800153680 /* Elementos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elementos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,14 @@
 			path = XIBs;
 			sourceTree = "<group>";
 		};
+		5F23212920B61FB90033AD79 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5F80270320B7631900153680 /* UserDefaultsFunctions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5F59F17620ACF3E100118682 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +110,8 @@
 		5F59F18120ACF3E100118682 /* Iberfibra */ = {
 			isa = PBXGroup;
 			children = (
+				5F80270520B8B58B00153680 /* Entities */,
+				5F23212920B61FB90033AD79 /* Utils */,
 				5F23211420B4BABD0033AD79 /* XIBs */,
 				5F23210C20B233850033AD79 /* Config */,
 				5F2320E320B21F9D0033AD79 /* Views */,
@@ -106,6 +120,14 @@
 				5F59F18E20ACF3E400118682 /* Info.plist */,
 			);
 			path = Iberfibra;
+			sourceTree = "<group>";
+		};
+		5F80270520B8B58B00153680 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5F80270620B8B5B800153680 /* Elementos.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +205,9 @@
 			files = (
 				5F23212320B60EE00033AD79 /* ConfiguracionViewController.swift in Sources */,
 				5F23212720B60F990033AD79 /* ConectarViewController.swift in Sources */,
+				5F80270420B7631900153680 /* UserDefaultsFunctions.swift in Sources */,
 				5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */,
+				5F80270720B8B5B800153680 /* Elementos.swift in Sources */,
 				5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */,
 				5F23211F20B60DDE0033AD79 /* PanelViewController.swift in Sources */,
 			);
