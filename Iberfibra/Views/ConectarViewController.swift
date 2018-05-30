@@ -15,6 +15,11 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
     var manager:CBCentralManager!
     var peripheral:CBPeripheral!
     var listaDispositivos:[Elementos.DispositivoBluetooth]?
+    var listaNombres:[String]?
+    var listaIdentificadores:[String]?
+    var listaPripherals:[CBPeripheral]?
+    var dic : [String : Any] = Dictionary()
+    
     
     
     @IBOutlet weak var tbDevices: UITableView!
@@ -25,7 +30,13 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
         self.tbDevices.dataSource = self
         tbDevices.delegate = self
         
+        
         listaDispositivos = [Elementos.DispositivoBluetooth]()
+        listaIdentificadores = [String]()
+        listaNombres = [String]()
+        listaPripherals = [CBPeripheral]()
+        dic[CBCentralManagerOptionShowPowerAlertKey] = false
+        manager = CBCentralManager(delegate: self, queue: nil, options: dic)
         // Do any additional setup after loading the view.
     }
 
@@ -40,7 +51,7 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
     //Busca dispositivos bluetooth.
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         if central.state == CBManagerState.poweredOn {
-            central.scanForPeripherals(withServices: nil)
+            central.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey:true])
         } else {
             print("Bluetooth not available.")
         }
@@ -53,6 +64,11 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
         elemento.identificador = peripheral.identifier.description
         elemento.nombre = peripheral.name ?? "Unknown Device"
         elemento.UUID = peripheral.identifier.uuidString
+        
+        listaNombres?.append(peripheral.name ?? "Unknown Device")
+        
+        
+        
         if(peripheral.state.rawValue == 0){
             elemento.estado = "desconectado"
         }
@@ -60,11 +76,12 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
             elemento.estado = "conectado"
         }
         
-        
+        if(!(listaIdentificadores?.contains(peripheral.identifier.uuidString))!){
+        listaIdentificadores?.append(peripheral.identifier.uuidString)
         listaDispositivos?.append(elemento)
-        
+        listaPripherals?.append(peripheral)
         tbDevices.reloadData()
-        
+        }
     }
     
     
@@ -83,6 +100,7 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(listaDispositivos![indexPath.row].nombre!)
+        manager.connect(listaPripherals![indexPath.row], options: [CBConnectPeripheralOptionNotifyOnDisconnectionKey : true])
     }
     
    
