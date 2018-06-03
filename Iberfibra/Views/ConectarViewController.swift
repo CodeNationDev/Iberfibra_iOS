@@ -27,28 +27,30 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.tbDevices.dataSource = self
         tbDevices.delegate = self
-        
-        
         listaDispositivos = [Elementos.DispositivoBluetooth]()
         listaIdentificadores = [String]()
         listaNombres = [String]()
         listaPripherals = [CBPeripheral]()
         dic[CBCentralManagerOptionShowPowerAlertKey] = false
         manager = CBCentralManager(delegate: self, queue: nil, options: dic)
-        // Do any additional setup after loading the view.
+        
     }
 
     
-    
+    //Botón que inicia el escaneo de dispositivos Bluetooth.
     @IBAction func EscanearDispositivos(_ sender: Any) {
         manager = CBCentralManager(delegate: self, queue: nil)
         centralManagerDidUpdateState(manager)
         
     }
     
-    //Busca dispositivos bluetooth.
+    //MARK: -
+    //MARK: Funciones Bluetooth
+    //MARK: -
+    //Inicia el escaneo comprobando el estado del bluetooth
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         if central.state == CBManagerState.poweredOn {
             central.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey:true])
@@ -57,6 +59,7 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    //Función que se ejecuta cada vez que se encuentra un dispositivo Bluetooth
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         print(peripheral)
         
@@ -66,8 +69,6 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
         elemento.UUID = peripheral.identifier.uuidString
         
         listaNombres?.append(peripheral.name ?? "Unknown Device")
-        
-        
         
         if(peripheral.state.rawValue == 0){
             elemento.estado = "desconectado"
@@ -84,12 +85,16 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    
+    //MARK: -
+    //MARK: Funciones de TableView
+    //MARK: -
+    //Función que cuenta los elementos de la lista.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return listaDispositivos!.count
     }
     
+    //Función que configura la celda y la devuelve.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "mycell")
         cell.textLabel?.text  = listaDispositivos![indexPath.row].nombre
@@ -97,14 +102,38 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-
+    //Función que obtiene el objeto sobre el que pulsamos de la tabla. Conecta el dispositivo Bluetooth.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(listaDispositivos![indexPath.row].nombre!)
         manager.connect(listaPripherals![indexPath.row], options: [CBConnectPeripheralOptionNotifyOnDisconnectionKey : true])
+        manager.stopScan()
+        
+        
+        let bytes : [UInt8] = [ 0x52, 0x13, 0x00, 0x56, 0xFF, 0x00, 0x00, 0x00, 0xAA ]
+        let data = Data(bytes:bytes)
+       
+
+        
     }
     
-   
-
+    func writeValue(_ data: Data,
+                    for characteristic: CBCharacteristic,
+                    type: CBCharacteristicWriteType){}
+    
+    
+    // Called when it succeeded
+    func centralManager(central: CBCentralManager,
+                        didConnectPeripheral peripheral: CBPeripheral)
+    {
+        print("connected!")
+    }
+    // Called when it failed
+    func centralManager(_ central: CBCentralManager,
+                        didFailToConnect peripheral: CBPeripheral,
+                        error: Error?)
+    {
+        print("failed…")
+    }
     
     
 }
