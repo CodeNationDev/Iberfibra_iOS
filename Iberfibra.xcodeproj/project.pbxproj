@@ -18,6 +18,8 @@
 		5F59F18A20ACF3E300118682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F59F18920ACF3E300118682 /* Assets.xcassets */; };
 		5F80270420B7631900153680 /* UserDefaultsFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F80270320B7631900153680 /* UserDefaultsFunctions.swift */; };
 		5F80270720B8B5B800153680 /* Elementos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F80270620B8B5B800153680 /* Elementos.swift */; };
+		5FD8080020D1B6A40094A9E2 /* CDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FD807FE20D1B6A40094A9E2 /* CDModel.xcdatamodeld */; };
+		5FD8082520D1B98B0094A9E2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8082420D1B98B0094A9E2 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5F59F18E20ACF3E400118682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F80270320B7631900153680 /* UserDefaultsFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsFunctions.swift; sourceTree = "<group>"; };
 		5F80270620B8B5B800153680 /* Elementos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elementos.swift; sourceTree = "<group>"; };
+		5FD807FF20D1B6A40094A9E2 /* CDModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDModel.xcdatamodel; sourceTree = "<group>"; };
+		5FD8082420D1B98B0094A9E2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		5F59F17620ACF3E100118682 = {
 			isa = PBXGroup;
 			children = (
+				5FD8082320D1B9730094A9E2 /* CoreData Utils */,
 				5F59F18120ACF3E100118682 /* Iberfibra */,
 				5F59F18020ACF3E100118682 /* Products */,
 			);
@@ -117,6 +122,7 @@
 				5F2320E320B21F9D0033AD79 /* Views */,
 				5F2320E220B21F880033AD79 /* Delegates */,
 				5F59F18920ACF3E300118682 /* Assets.xcassets */,
+				5FD807FE20D1B6A40094A9E2 /* CDModel.xcdatamodeld */,
 				5F59F18E20ACF3E400118682 /* Info.plist */,
 			);
 			path = Iberfibra;
@@ -128,6 +134,14 @@
 				5F80270620B8B5B800153680 /* Elementos.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		5FD8082320D1B9730094A9E2 /* CoreData Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5FD8082420D1B98B0094A9E2 /* CoreDataStack.swift */,
+			);
+			path = "CoreData Utils";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +220,9 @@
 				5F23212320B60EE00033AD79 /* ConfiguracionViewController.swift in Sources */,
 				5F23212720B60F990033AD79 /* ConectarViewController.swift in Sources */,
 				5F80270420B7631900153680 /* UserDefaultsFunctions.swift in Sources */,
+				5FD8082520D1B98B0094A9E2 /* CoreDataStack.swift in Sources */,
 				5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */,
+				5FD8080020D1B6A40094A9E2 /* CDModel.xcdatamodeld in Sources */,
 				5F80270720B8B5B800153680 /* Elementos.swift in Sources */,
 				5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */,
 				5F23211F20B60DDE0033AD79 /* PanelViewController.swift in Sources */,
@@ -391,6 +407,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5FD807FE20D1B6A40094A9E2 /* CDModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5FD807FF20D1B6A40094A9E2 /* CDModel.xcdatamodel */,
+			);
+			currentVersion = 5FD807FF20D1B6A40094A9E2 /* CDModel.xcdatamodel */;
+			path = CDModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5F59F17720ACF3E100118682 /* Project object */;
 }
