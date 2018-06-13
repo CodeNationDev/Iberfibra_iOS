@@ -116,24 +116,37 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
         
     }
     
+    func peripheralManager(_ peripheral: CBPeripheralManager, central: CBCentral, didSubscribeTo characteristic: CBCharacteristic) {
+        
+        print("Central subscribed to characteristic")
+        
+    }
+    
+    func centralManager(
+        central: CBCentralManager,
+        didConnectPeripheral peripheral: CBPeripheral) {
+        peripheral.discoverServices(nil)
+    }
+    
     func writeValue(_ data: Data,
                     for characteristic: CBCharacteristic,
                     type: CBCharacteristicWriteType){}
     
     
     // Called when it succeeded
-    func centralManager(central: CBCentralManager,
-                        didConnectPeripheral peripheral: CBPeripheral)
-    {
-        print("connected!")
-    }
+
+    
+    
+    
     // Called when it failed
     func centralManager(_ central: CBCentralManager,
                         didFailToConnect peripheral: CBPeripheral,
-                        error: Error?)
-    {
+                        error: Error?){
+        
         print("failed…")
     }
+    
+    
     
     
 }
