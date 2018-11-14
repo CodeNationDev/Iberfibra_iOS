@@ -109,8 +109,8 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
         manager.stopScan()
         
         
-        let bytes : [UInt8] = [ 0x52, 0x13, 0x00, 0x56, 0xFF, 0x00, 0x00, 0x00, 0xAA ]
-        let data = Data(bytes:bytes)
+        //let bytes : [UInt8] = [ 0x52, 0x13, 0x00, 0x56, 0xFF, 0x00, 0x00, 0x00, 0xAA ]
+       // let data = Data(bytes:bytes)
        
 
         

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075404EC219B847600CF9967 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404EB219B847600CF9967 /* Mocks.swift */; };
+		075404EF219B871800CF9967 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404EE219B871800CF9967 /* ErrorHandling.swift */; };
+		075404F2219BF80B00CF9967 /* BotoneraPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404F1219BF80B00CF9967 /* BotoneraPanelController.swift */; };
 		5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2320E420B21FC90033AD79 /* AppDelegate.swift */; };
 		5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210D20B2339C0033AD79 /* Configuracion.swift */; };
 		5F23211F20B60DDE0033AD79 /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23211D20B60DDE0033AD79 /* PanelViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075404EB219B847600CF9967 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		075404EE219B871800CF9967 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		075404F1219BF80B00CF9967 /* BotoneraPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotoneraPanelController.swift; sourceTree = "<group>"; };
 		5F2320E420B21FC90033AD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F23210D20B2339C0033AD79 /* Configuracion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracion.swift; sourceTree = "<group>"; };
 		5F23211D20B60DDE0033AD79 /* PanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075404ED219B86FE00CF9967 /* MockClasses */ = {
+			isa = PBXGroup;
+			children = (
+				075404EB219B847600CF9967 /* Mocks.swift */,
+			);
+			path = MockClasses;
+			sourceTree = "<group>";
+		};
+		075404F0219B871D00CF9967 /* ErrorManager */ = {
+			isa = PBXGroup;
+			children = (
+				075404EE219B871800CF9967 /* ErrorHandling.swift */,
+			);
+			path = ErrorManager;
+			sourceTree = "<group>";
+		};
 		5F2320E220B21F880033AD79 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,14 +81,15 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		5F2320E320B21F9D0033AD79 /* Views */ = {
+		5F2320E320B21F9D0033AD79 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				5F23211D20B60DDE0033AD79 /* PanelViewController.swift */,
 				5F23212120B60EE00033AD79 /* ConfiguracionViewController.swift */,
 				5F23212520B60F990033AD79 /* ConectarViewController.swift */,
+				075404F1219BF80B00CF9967 /* BotoneraPanelController.swift */,
 			);
-			path = Views;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		5F23210C20B233850033AD79 /* Config */ = {
@@ -98,7 +121,6 @@
 		5F59F17620ACF3E100118682 = {
 			isa = PBXGroup;
 			children = (
-				5FD8082320D1B9730094A9E2 /* CoreData Utils */,
 				5F59F18120ACF3E100118682 /* Iberfibra */,
 				5F59F18020ACF3E100118682 /* Products */,
 			);
@@ -115,11 +137,14 @@
 		5F59F18120ACF3E100118682 /* Iberfibra */ = {
 			isa = PBXGroup;
 			children = (
+				075404F0219B871D00CF9967 /* ErrorManager */,
+				075404ED219B86FE00CF9967 /* MockClasses */,
+				5FD8082320D1B9730094A9E2 /* CoreData Utils */,
 				5F80270520B8B58B00153680 /* Entities */,
 				5F23212920B61FB90033AD79 /* Utils */,
 				5F23211420B4BABD0033AD79 /* XIBs */,
 				5F23210C20B233850033AD79 /* Config */,
-				5F2320E320B21F9D0033AD79 /* Views */,
+				5F2320E320B21F9D0033AD79 /* ViewControllers */,
 				5F2320E220B21F880033AD79 /* Delegates */,
 				5F59F18920ACF3E300118682 /* Assets.xcassets */,
 				5FD807FE20D1B6A40094A9E2 /* CDModel.xcdatamodeld */,
@@ -223,9 +248,12 @@
 				5FD8082520D1B98B0094A9E2 /* CoreDataStack.swift in Sources */,
 				5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */,
 				5FD8080020D1B6A40094A9E2 /* CDModel.xcdatamodeld in Sources */,
+				075404F2219BF80B00CF9967 /* BotoneraPanelController.swift in Sources */,
+				075404EF219B871800CF9967 /* ErrorHandling.swift in Sources */,
 				5F80270720B8B5B800153680 /* Elementos.swift in Sources */,
 				5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */,
 				5F23211F20B60DDE0033AD79 /* PanelViewController.swift in Sources */,
+				075404EC219B847600CF9967 /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

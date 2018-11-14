@@ -11,19 +11,25 @@ import CoreBluetooth
 
 class PanelViewController: UIViewController {
     
-
+    @IBOutlet weak var panelOperativo: BotoneraPanelController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let panel = mockPanel()
+        salvarPanel(clave: panel.nombre!, objetoPanel: panel)
       
     }
     
-    override func viewDidAppear(_ animated: Bool){
+    override func viewDidAppear(_ animated: Bool) {
         
-        if UserDefaultsFunctions().recuperaObjetoTexto(clave: "panel") != nil{
+        
+        
+        var panel = Elementos.Panel.init()
+        do{
+            let panel = try recuperarPanel(nombre: "mockPanel")
             
-        }
-        else{
+        } catch {
+            
             let alert: UIAlertController = UIAlertController(title: "Aviso",message: "No se ha encontrado panel vinculado, por favor, vaya a la pestaña 'Conectar y vincule uno'", preferredStyle: UIAlertControllerStyle.alert)
             
             alert.addAction(UIAlertAction(title: "Vamos!", style: .default, handler: { action in
@@ -32,6 +38,8 @@ class PanelViewController: UIViewController {
             
             self.present(alert,animated: true)
         }
+        
+        
     }
 
 }
