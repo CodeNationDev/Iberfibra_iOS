@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PanelViewController" customModule="Iberfibra" customModuleProvider="target">
             <connections>
-                <outlet property="panelOperativo" destination="SrR-HJ-Gua" id="mSm-1E-die"/>
+                <outlet property="cvPanelOperativo" destination="SrR-HJ-Gua" id="eBi-8m-aJS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,8 +34,8 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SrR-HJ-Gua" customClass="BotoneraPanelController" customModule="Iberfibra" customModuleProvider="target">
-                    <rect key="frame" x="16" y="124" width="343" height="520"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SrR-HJ-Gua">
+                    <rect key="frame" x="16" y="120" width="343" height="527"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kjh-Ic-5kk">
                         <size key="itemSize" width="50" height="50"/>
@@ -48,11 +48,11 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="46b-6O-GMk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7SN-de-Cm0"/>
-                <constraint firstItem="SrR-HJ-Gua" firstAttribute="leading" secondItem="46b-6O-GMk" secondAttribute="leading" id="JLg-m4-MDG"/>
-                <constraint firstItem="SrR-HJ-Gua" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="Rxm-yV-5dt"/>
+                <constraint firstItem="SrR-HJ-Gua" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AEX-rJ-TXP"/>
+                <constraint firstItem="SrR-HJ-Gua" firstAttribute="top" secondItem="46b-6O-GMk" secondAttribute="bottom" constant="19" id="Dda-et-yRl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SrR-HJ-Gua" secondAttribute="trailing" constant="16" id="Ipq-X3-HfJ"/>
                 <constraint firstItem="46b-6O-GMk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="TuM-0q-phf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SrR-HJ-Gua" secondAttribute="bottom" constant="23" id="UQS-yS-Pyh"/>
-                <constraint firstItem="SrR-HJ-Gua" firstAttribute="top" secondItem="46b-6O-GMk" secondAttribute="bottom" constant="23" id="gcY-Bk-WJ3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SrR-HJ-Gua" secondAttribute="bottom" constant="20" id="ldu-ac-6CS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="147.97601199400302"/>

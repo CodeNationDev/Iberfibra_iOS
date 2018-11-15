@@ -32,7 +32,7 @@ import Foundation
     }
 
     //Función para recuperar un panel de UserDefaults
-func recuperarPanel(nombre: String) throws -> Elementos.Panel {
+func recuperarPanel(nombre: String) -> Elementos.Panel? {
         
         let userDefaults = UserDefaults.standard
         let decoded  = userDefaults.object(forKey: nombre) as! Data
