@@ -21,12 +21,16 @@ class PanelViewController: UIViewController, UICollectionViewDataSource, UIColle
         let panel = mockPanel()
         salvarPanel(clave: panel.nombre!, objetoPanel: panel)
         
-        
-        
         cvPanelOperativo.delegate = self
         cvPanelOperativo.dataSource = self
         
         cvPanelOperativo.register(UINib.init(nibName: "CellButton", bundle: nil), forCellWithReuseIdentifier: "cellButton")
+        
+        configureSizeCollectionAndCells()
+        
+        
+       
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,13 +69,35 @@ class PanelViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         
         
-        let cell = cvPanelOperativo.dequeueReusableCell(withReuseIdentifier: "cellButton", for: indexPath) as! CellButtonCollectionViewCell
+            let cell = cvPanelOperativo.dequeueReusableCell(withReuseIdentifier: "cellButton", for: indexPath) as! CellButtonCollectionViewCell
         
-//        cell.configure(nombre: panelOperativo.botones![indexPath.row].comando! , comando: panelOperativo.botones![indexPath.row].comando!)
+    //        cell.configure(nombre: panelOperativo.botones![indexPath.row].comando! , comando: panelOperativo.botones![indexPath.row].comando!)
+//        cell.frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.y, cell.frame.size.width, heights[indexPath.row])
         
         
-        return cell
+            return cell
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Has clickado el elemento " +  String(indexPath.row))
+        
     }
+    
+    func configureSizeCollectionAndCells(){
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width/4, height: UIScreen.main.bounds.width/4)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 10
+        
+        cvPanelOperativo.collectionViewLayout = layout
+        
+    }
+    
+}
+
+
 
 

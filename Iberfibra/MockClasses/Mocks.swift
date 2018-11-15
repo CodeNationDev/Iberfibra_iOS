@@ -24,6 +24,19 @@ func mockBotones() -> [Elementos.BotonPanel] {
     
     let botones = [Elementos.BotonPanel.init(),
                    Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
+                   Elementos.BotonPanel.init(),
                    Elementos.BotonPanel.init()]
     
     return botones
