@@ -35,9 +35,7 @@ class PanelViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     override func viewDidAppear(_ animated: Bool) {
         
-        
-        
-        if let panel = try recuperarPanel(nombre: "mockPanel"){
+        if let panel = recuperarPanel(nombre: "mockPanel"){
             panelOperativo = panel
         } else {
             
