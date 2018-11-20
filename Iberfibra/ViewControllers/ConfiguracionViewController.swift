@@ -29,7 +29,7 @@ class ConfiguracionViewController: UIViewController, UITableViewDelegate, UITabl
     //Función que configura la celda y la devuelve.
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "mycell")
+        let cell:UITableViewCell=UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
         
         cell.textLabel?.text = "Opción 1"
         cell.imageView?.image = UIImage(imageLiteralResourceName: "bluetooth")

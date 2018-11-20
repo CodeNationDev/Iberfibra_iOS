@@ -96,7 +96,7 @@ CBPeripheralDelegate, UITableViewDataSource, UITableViewDelegate {
     
     //Función que configura la celda y la devuelve.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "mycell")
+        let cell:UITableViewCell=UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
         cell.textLabel?.text  = listaDispositivos![indexPath.row].nombre
         
         return cell

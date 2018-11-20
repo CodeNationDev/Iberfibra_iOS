@@ -39,7 +39,7 @@ class PanelViewController: UIViewController, UICollectionViewDataSource, UIColle
             panelOperativo = panel
         } else {
             
-            let alert: UIAlertController = UIAlertController(title: "Aviso",message: "No se ha encontrado panel vinculado, por favor, vaya a la pestaña 'Conectar y vincule uno'", preferredStyle: UIAlertControllerStyle.alert)
+            let alert: UIAlertController = UIAlertController(title: "Aviso",message: "No se ha encontrado panel vinculado, por favor, vaya a la pestaña 'Conectar y vincule uno'", preferredStyle: UIAlertController.Style.alert)
             
             alert.addAction(UIAlertAction(title: "Vamos!", style: .default, handler: { action in
                 self.tabBarController?.selectedIndex = 2
