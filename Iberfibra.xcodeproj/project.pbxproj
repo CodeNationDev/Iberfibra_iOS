@@ -11,6 +11,9 @@
 		075404EC219B847600CF9967 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404EB219B847600CF9967 /* Mocks.swift */; };
 		075404EF219B871800CF9967 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404EE219B871800CF9967 /* ErrorHandling.swift */; };
 		075404F4219CD6D400CF9967 /* CellButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404F3219CD6D400CF9967 /* CellButtonCollectionViewCell.swift */; };
+		07FCB25F21A4B72A00630D7C /* ConfigSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07FCB25E21A4B72A00630D7C /* ConfigSettings.bundle */; };
+		07FCB26321A4BAD600630D7C /* NumberOfItemsRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FCB26221A4BAD600630D7C /* NumberOfItemsRow.xib */; };
+		07FCB26621A4BD2200630D7C /* NumberOfItemsControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FCB26521A4BD2200630D7C /* NumberOfItemsControllerCell.swift */; };
 		5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2320E420B21FC90033AD79 /* AppDelegate.swift */; };
 		5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23210D20B2339C0033AD79 /* Configuracion.swift */; };
 		5F23211F20B60DDE0033AD79 /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23211D20B60DDE0033AD79 /* PanelViewController.swift */; };
@@ -31,6 +34,9 @@
 		075404EB219B847600CF9967 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		075404EE219B871800CF9967 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		075404F3219CD6D400CF9967 /* CellButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		07FCB25E21A4B72A00630D7C /* ConfigSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ConfigSettings.bundle; sourceTree = "<group>"; };
+		07FCB26221A4BAD600630D7C /* NumberOfItemsRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberOfItemsRow.xib; sourceTree = "<group>"; };
+		07FCB26521A4BD2200630D7C /* NumberOfItemsControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfItemsControllerCell.swift; sourceTree = "<group>"; };
 		5F2320E420B21FC90033AD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F23210D20B2339C0033AD79 /* Configuracion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracion.swift; sourceTree = "<group>"; };
 		5F23211D20B60DDE0033AD79 /* PanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +81,68 @@
 			path = ErrorManager;
 			sourceTree = "<group>";
 		};
+		07FCB26021A4BA8A00630D7C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5F23211E20B60DDE0033AD79 /* PanelViewController.xib */,
+				5F23212220B60EE00033AD79 /* ConfiguracionViewController.xib */,
+				5F23212620B60F990033AD79 /* ConectarViewController.xib */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		07FCB26121A4BAA800630D7C /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				07FCB26A21A4BF7600630D7C /* PanelOperativo */,
+				07FCB26421A4BCA400630D7C /* ConfigPanel */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		07FCB26421A4BCA400630D7C /* ConfigPanel */ = {
+			isa = PBXGroup;
+			children = (
+				07FCB26221A4BAD600630D7C /* NumberOfItemsRow.xib */,
+			);
+			path = ConfigPanel;
+			sourceTree = "<group>";
+		};
+		07FCB26721A4BD2900630D7C /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				07FCB26921A4BD5300630D7C /* ConfigPanel */,
+				075404F3219CD6D400CF9967 /* CellButtonCollectionViewCell.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		07FCB26821A4BD3500630D7C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5F23211D20B60DDE0033AD79 /* PanelViewController.swift */,
+				5F23212120B60EE00033AD79 /* ConfiguracionViewController.swift */,
+				5F23212520B60F990033AD79 /* ConectarViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		07FCB26921A4BD5300630D7C /* ConfigPanel */ = {
+			isa = PBXGroup;
+			children = (
+				07FCB26521A4BD2200630D7C /* NumberOfItemsControllerCell.swift */,
+			);
+			path = ConfigPanel;
+			sourceTree = "<group>";
+		};
+		07FCB26A21A4BF7600630D7C /* PanelOperativo */ = {
+			isa = PBXGroup;
+			children = (
+				07352CB3219D64AC00AE2D33 /* CellButton.xib */,
+			);
+			path = PanelOperativo;
+			sourceTree = "<group>";
+		};
 		5F2320E220B21F880033AD79 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +154,8 @@
 		5F2320E320B21F9D0033AD79 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F23211D20B60DDE0033AD79 /* PanelViewController.swift */,
-				5F23212120B60EE00033AD79 /* ConfiguracionViewController.swift */,
-				5F23212520B60F990033AD79 /* ConectarViewController.swift */,
-				075404F3219CD6D400CF9967 /* CellButtonCollectionViewCell.swift */,
+				07FCB26821A4BD3500630D7C /* App */,
+				07FCB26721A4BD2900630D7C /* Elements */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -105,10 +171,8 @@
 		5F23211420B4BABD0033AD79 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				5F23211E20B60DDE0033AD79 /* PanelViewController.xib */,
-				5F23212220B60EE00033AD79 /* ConfiguracionViewController.xib */,
-				5F23212620B60F990033AD79 /* ConectarViewController.xib */,
-				07352CB3219D64AC00AE2D33 /* CellButton.xib */,
+				07FCB26121A4BAA800630D7C /* Elements */,
+				07FCB26021A4BA8A00630D7C /* App */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -124,6 +188,7 @@
 		5F59F17620ACF3E100118682 = {
 			isa = PBXGroup;
 			children = (
+				07FCB25E21A4B72A00630D7C /* ConfigSettings.bundle */,
 				5F59F18120ACF3E100118682 /* Iberfibra */,
 				5F59F18020ACF3E100118682 /* Products */,
 			);
@@ -232,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F23212420B60EE00033AD79 /* ConfiguracionViewController.xib in Resources */,
+				07FCB26321A4BAD600630D7C /* NumberOfItemsRow.xib in Resources */,
 				5F59F18A20ACF3E300118682 /* Assets.xcassets in Resources */,
+				07FCB25F21A4B72A00630D7C /* ConfigSettings.bundle in Resources */,
 				07352CB4219D64AC00AE2D33 /* CellButton.xib in Resources */,
 				5F23212820B60F990033AD79 /* ConectarViewController.xib in Resources */,
 				5F23212020B60DDE0033AD79 /* PanelViewController.xib in Resources */,
@@ -249,6 +316,7 @@
 				5F23212320B60EE00033AD79 /* ConfiguracionViewController.swift in Sources */,
 				5F23212720B60F990033AD79 /* ConectarViewController.swift in Sources */,
 				5F80270420B7631900153680 /* UserDefaultsFunctions.swift in Sources */,
+				07FCB26621A4BD2200630D7C /* NumberOfItemsControllerCell.swift in Sources */,
 				075404F4219CD6D400CF9967 /* CellButtonCollectionViewCell.swift in Sources */,
 				5FD8082520D1B98B0094A9E2 /* CoreDataStack.swift in Sources */,
 				5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */,

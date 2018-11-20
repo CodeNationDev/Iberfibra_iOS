@@ -29,12 +29,30 @@ class ConfiguracionViewController: UIViewController, UITableViewDelegate, UITabl
     //Función que configura la celda y la devuelve.
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:UITableViewCell=UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
+        var cell = UITableViewCell()
         
-        cell.textLabel?.text = "Opción 1"
-        cell.imageView?.image = UIImage(imageLiteralResourceName: "bluetooth")
+        if indexPath.row == 3{
+            
+            let numberCell = NumberOfItemsControllerCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "numberCell")
+            
+            numberCell.setTitle(title: "Número de botones")
+            numberCell.setNumber(number: 0)
+            numberCell.setImage(assetName: "panelIcon")
+            
+            cell = numberCell
+            
+        }
+        else {
+        let genericCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
         
+        genericCell.textLabel?.text = "Opción 1"
+        genericCell.imageView?.image = UIImage(imageLiteralResourceName: "bluetooth")
+        cell = genericCell
+        
+        }
+    
         return cell
+        
     
     }
     
