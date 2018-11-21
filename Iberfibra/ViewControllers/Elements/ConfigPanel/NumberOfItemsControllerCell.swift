@@ -35,6 +35,8 @@ class NumberOfItemsControllerCell: UITableViewCell {
     }
     
     func setNumber(number: Int){
+    
+        self.number.text = String(number)
         
     }
 

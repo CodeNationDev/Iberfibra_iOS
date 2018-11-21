@@ -31,6 +31,7 @@ class ConfiguracionViewController: UIViewController, UITableViewDelegate, UITabl
     
     //Función que configura la celda y la devuelve.
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if indexPath.row == 3 {
             
             let numberCell = tableView.dequeueReusableCell(withIdentifier: "numberOfItemsCell", for: indexPath) as! NumberOfItemsControllerCell
