@@ -36,20 +36,19 @@
                             <constraint firstAttribute="width" constant="40" id="ito-Kg-Vq6"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwo-NU-gwk" userLabel="title">
-                        <rect key="frame" x="110" y="11" width="42" height="21.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwo-NU-gwk" userLabel="title">
+                        <rect key="frame" x="69" y="11" width="137" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="NA2-pZ-Hgi" secondAttribute="bottom" constant="11" id="2KP-cP-FIE"/>
                     <constraint firstItem="4gg-FG-nUD" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="top" constant="7" id="70W-Y3-NTk"/>
                     <constraint firstItem="GCs-cM-plt" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="top" constant="7" id="D47-cI-qYi"/>
                     <constraint firstItem="NA2-pZ-Hgi" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="topMargin" id="D9V-ph-geU"/>
-                    <constraint firstItem="vwo-NU-gwk" firstAttribute="leading" secondItem="4gg-FG-nUD" secondAttribute="trailing" constant="62" id="Erv-Eh-lPK"/>
+                    <constraint firstItem="vwo-NU-gwk" firstAttribute="leading" secondItem="4gg-FG-nUD" secondAttribute="trailing" constant="21" id="Erv-Eh-lPK"/>
                     <constraint firstItem="4gg-FG-nUD" firstAttribute="leading" secondItem="6tm-LJ-oQ5" secondAttribute="leadingMargin" constant="-8" id="KYm-Pg-66N"/>
                     <constraint firstAttribute="bottom" secondItem="4gg-FG-nUD" secondAttribute="bottom" constant="7" id="ONT-AN-Rxq"/>
                     <constraint firstItem="4gg-FG-nUD" firstAttribute="centerY" secondItem="vwo-NU-gwk" secondAttribute="centerY" id="OtK-Jv-84c"/>
@@ -69,14 +68,12 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="cellContent" destination="6tm-LJ-oQ5" id="KGB-s5-mDw"/>
                 <outlet property="icon" destination="4gg-FG-nUD" id="aTL-pN-1hP"/>
-                <outlet property="image" destination="4gg-FG-nUD" id="lpd-iV-KOG"/>
                 <outlet property="number" destination="NA2-pZ-Hgi" id="emx-Mk-pUm"/>
                 <outlet property="stepper" destination="GCs-cM-plt" id="f7u-gq-HVc"/>
                 <outlet property="title" destination="vwo-NU-gwk" id="OwG-0i-9vj"/>
             </connections>
-            <point key="canvasLocation" x="-79" y="-304"/>
+            <point key="canvasLocation" x="-79.200000000000003" y="-304.04797601199402"/>
         </tableViewCell>
     </objects>
 </document>

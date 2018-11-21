@@ -18,6 +18,9 @@ class ConfiguracionViewController: UIViewController, UITableViewDelegate, UITabl
         tvConfig.delegate = self
         tvConfig.dataSource = self
         
+        let nib = UINib(nibName: "NumberOfItemsRow", bundle: nil)
+        tvConfig.register(nib, forCellReuseIdentifier: "numberOfItemsCell")
+        
     }
     
     //Función que cuenta los elementos de la lista.
@@ -28,32 +31,26 @@ class ConfiguracionViewController: UIViewController, UITableViewDelegate, UITabl
     
     //Función que configura la celda y la devuelve.
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        var cell = UITableViewCell()
-        
-        if indexPath.row == 3{
+        if indexPath.row == 3 {
             
-            let numberCell = NumberOfItemsControllerCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "numberCell")
+            let numberCell = tableView.dequeueReusableCell(withIdentifier: "numberOfItemsCell", for: indexPath) as! NumberOfItemsControllerCell
             
             numberCell.setTitle(title: "Número de botones")
             numberCell.setNumber(number: 0)
             numberCell.setImage(assetName: "panelIcon")
             
-            cell = numberCell
+            return numberCell
+            
+        } else {
+            
+            let genericCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
+            
+            genericCell.textLabel?.text = "Opción 1"
+            genericCell.imageView?.image = UIImage(imageLiteralResourceName: "bluetooth")
+            
+            return genericCell
             
         }
-        else {
-        let genericCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
-        
-        genericCell.textLabel?.text = "Opción 1"
-        genericCell.imageView?.image = UIImage(imageLiteralResourceName: "bluetooth")
-        cell = genericCell
-        
-        }
-    
-        return cell
-        
-    
     }
     
     //Función que obtiene el objeto sobre el que pulsamos de la tabla. Conecta el dispositivo Bluetooth.
