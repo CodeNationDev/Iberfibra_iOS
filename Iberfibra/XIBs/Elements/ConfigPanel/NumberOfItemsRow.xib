@@ -12,68 +12,45 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="numberOfItemsCell" id="DY4-V3-i8X" userLabel="numberCell" customClass="NumberOfItemsControllerCell" customModule="Iberfibra" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="537" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DY4-V3-i8X" id="6tm-LJ-oQ5">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="537" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="GCs-cM-plt" userLabel="stepper">
-                        <rect key="frame" x="226" y="7" width="94" height="29"/>
-                        <connections>
-                            <action selector="cuantityStepperAction:" destination="DY4-V3-i8X" eventType="valueChanged" id="gsh-cT-b9Z"/>
-                        </connections>
-                    </stepper>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-pZ-Hgi" userLabel="numberItems">
-                        <rect key="frame" x="328" y="11" width="42" height="21.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4gg-FG-nUD" userLabel="icon">
-                        <rect key="frame" x="8" y="7" width="40" height="29.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="40" id="ito-Kg-Vq6"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwo-NU-gwk" userLabel="title">
-                        <rect key="frame" x="69" y="11" width="137" height="22"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CSK-SQ-Uzo">
+                        <rect key="frame" x="78" y="7" width="280.5" height="29"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwo-NU-gwk" userLabel="title">
+                                <rect key="frame" x="0.0" y="4.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="GCs-cM-plt" userLabel="stepper">
+                                <rect key="frame" x="92" y="0.0" width="94" height="29"/>
+                                <connections>
+                                    <action selector="cuantityStepperAction:" destination="DY4-V3-i8X" eventType="valueChanged" id="gsh-cT-b9Z"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-pZ-Hgi" userLabel="numberItems">
+                                <rect key="frame" x="236" y="4.5" width="44.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="NA2-pZ-Hgi" secondAttribute="bottom" constant="11" id="2KP-cP-FIE"/>
-                    <constraint firstItem="4gg-FG-nUD" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="top" constant="7" id="70W-Y3-NTk"/>
-                    <constraint firstItem="GCs-cM-plt" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="top" constant="7" id="D47-cI-qYi"/>
-                    <constraint firstItem="NA2-pZ-Hgi" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="topMargin" id="D9V-ph-geU"/>
-                    <constraint firstItem="vwo-NU-gwk" firstAttribute="leading" secondItem="4gg-FG-nUD" secondAttribute="trailing" constant="21" id="Erv-Eh-lPK"/>
-                    <constraint firstItem="4gg-FG-nUD" firstAttribute="leading" secondItem="6tm-LJ-oQ5" secondAttribute="leadingMargin" constant="-8" id="KYm-Pg-66N"/>
-                    <constraint firstAttribute="bottom" secondItem="4gg-FG-nUD" secondAttribute="bottom" constant="7" id="ONT-AN-Rxq"/>
-                    <constraint firstItem="4gg-FG-nUD" firstAttribute="centerY" secondItem="vwo-NU-gwk" secondAttribute="centerY" id="OtK-Jv-84c"/>
-                    <constraint firstItem="NA2-pZ-Hgi" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="top" constant="11" id="PJ4-6N-r6z"/>
-                    <constraint firstItem="NA2-pZ-Hgi" firstAttribute="firstBaseline" secondItem="vwo-NU-gwk" secondAttribute="firstBaseline" id="S6i-40-5i4"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="vwo-NU-gwk" secondAttribute="bottom" constant="0.5" id="TS3-NU-CUH"/>
-                    <constraint firstItem="NA2-pZ-Hgi" firstAttribute="leading" secondItem="GCs-cM-plt" secondAttribute="trailing" constant="8" symbolic="YES" id="Y0s-WD-NV2"/>
-                    <constraint firstItem="4gg-FG-nUD" firstAttribute="centerY" secondItem="GCs-cM-plt" secondAttribute="centerY" id="YOh-bd-jgm"/>
-                    <constraint firstItem="4gg-FG-nUD" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="topMargin" constant="-4" id="b9j-HL-88W"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="NA2-pZ-Hgi" secondAttribute="trailing" constant="-11" id="bhK-57-VRh"/>
-                    <constraint firstItem="vwo-NU-gwk" firstAttribute="top" secondItem="6tm-LJ-oQ5" secondAttribute="topMargin" id="lPa-uL-mYx"/>
-                    <constraint firstItem="4gg-FG-nUD" firstAttribute="top" secondItem="GCs-cM-plt" secondAttribute="top" id="q8s-dX-erA"/>
-                    <constraint firstItem="4gg-FG-nUD" firstAttribute="centerY" secondItem="6tm-LJ-oQ5" secondAttribute="centerY" id="rbR-6W-7aX"/>
-                    <constraint firstAttribute="bottom" secondItem="GCs-cM-plt" secondAttribute="bottom" constant="7" id="vWD-NG-8yL"/>
-                    <constraint firstAttribute="trailing" secondItem="NA2-pZ-Hgi" secondAttribute="trailing" constant="5" id="y9x-if-DIt"/>
-                    <constraint firstItem="NA2-pZ-Hgi" firstAttribute="baseline" secondItem="vwo-NU-gwk" secondAttribute="baseline" id="z16-k7-MUH"/>
-                </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="icon" destination="4gg-FG-nUD" id="aTL-pN-1hP"/>
+                <outlet property="Stepper" destination="GCs-cM-plt" id="sAZ-8p-BAv"/>
                 <outlet property="number" destination="NA2-pZ-Hgi" id="emx-Mk-pUm"/>
                 <outlet property="stepper" destination="GCs-cM-plt" id="f7u-gq-HVc"/>
                 <outlet property="title" destination="vwo-NU-gwk" id="OwG-0i-9vj"/>
             </connections>
-            <point key="canvasLocation" x="-79.200000000000003" y="-304.04797601199402"/>
+            <point key="canvasLocation" x="-122.40000000000001" y="-304.04797601199402"/>
         </tableViewCell>
     </objects>
 </document>

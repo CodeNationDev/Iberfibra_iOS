@@ -11,7 +11,8 @@ import UIKit
 
 class NumberOfItemsControllerCell: UITableViewCell {
     
-    @IBOutlet weak var icon: UIImageView!
+    
+    
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var number: UILabel!
@@ -19,24 +20,36 @@ class NumberOfItemsControllerCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        stepper.maximumValue = 16
+        
     }
-    @IBAction func cuantityStepperAction(_ sender: Any) {
+    @IBAction func cuantityStepperAction(_ sender: UIStepper) {
         
-        
+        self.number.text = Int(sender.value).description
         
     }
     
     func setImage(assetName: String){
         
+        self.imageView?.image = UIImage(imageLiteralResourceName: assetName)
+        
     }
     
     func setTitle(title: String){
+        
+        self.title.text = title
         
     }
     
     func setNumber(number: Int){
     
         self.number.text = String(number)
+        
+    }
+    
+    func setStepperValue(value: Int){
+        
+       self.stepper.value = Double(value)
         
     }
 
