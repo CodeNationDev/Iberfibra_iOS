@@ -43,18 +43,24 @@ class Elementos{
     @objc(_TtCC9Iberfibra9Elementos10BotonPanel)class BotonPanel: NSObject, NSCoding{
         var estado: Bool?
         var color: String? //String con el hexadecimal del color.
+        var descripcion: String?
         var comando: String?
         
-        init(estado: Bool, color: String, comando: String){
+        init(estado: Bool, color: String, comando: String, descripcion: String){
             self.estado = estado
             self.color = color
             self.comando = comando
+            self.descripcion = descripcion
+            
         }
         
         override init(){
             self.estado = true
             self.color = "#FFEFF"
             self.comando = ""
+            self.descripcion = "Boton 4"
+            
+            
             
         }
         
@@ -62,13 +68,15 @@ class Elementos{
             let estado = aDecoder.decodeObject(forKey: "estado") as! Bool
             let color = aDecoder.decodeObject(forKey: "color") as! String
             let comando = aDecoder.decodeObject(forKey: "comando") as! String
-            self.init(estado: estado, color: color, comando: comando)
+            let descripcion = aDecoder.decodeObject(forKey: "descripcion") as! String
+            self.init(estado: estado, color: color, comando: comando, descripcion: descripcion)
         }
         
         func encode(with aCoder: NSCoder) {
             aCoder.encode(estado, forKey: "estado")
             aCoder.encode(color, forKey: "color")
             aCoder.encode(comando, forKey: "comando")
+            aCoder.encode(comando, forKey: "descripcion")
         }
     }
     
