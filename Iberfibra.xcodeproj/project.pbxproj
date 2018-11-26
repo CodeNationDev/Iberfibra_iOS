@@ -11,6 +11,8 @@
 		075404EC219B847600CF9967 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404EB219B847600CF9967 /* Mocks.swift */; };
 		075404EF219B871800CF9967 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404EE219B871800CF9967 /* ErrorHandling.swift */; };
 		075404F4219CD6D400CF9967 /* CellButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404F3219CD6D400CF9967 /* CellButtonCollectionViewCell.swift */; };
+		07C9CCAD21A763C40027A0EA /* ConfigColorsAndCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9CCAC21A763C40027A0EA /* ConfigColorsAndCommandsController.swift */; };
+		07C9CCAF21A763E90027A0EA /* ConfigColorsAndCommands.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C9CCAE21A763E90027A0EA /* ConfigColorsAndCommands.xib */; };
 		07FCB25F21A4B72A00630D7C /* ConfigSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07FCB25E21A4B72A00630D7C /* ConfigSettings.bundle */; };
 		07FCB26321A4BAD600630D7C /* NumberOfItemsRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FCB26221A4BAD600630D7C /* NumberOfItemsRow.xib */; };
 		07FCB26621A4BD2200630D7C /* NumberOfItemsControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FCB26521A4BD2200630D7C /* NumberOfItemsControllerCell.swift */; };
@@ -34,6 +36,8 @@
 		075404EB219B847600CF9967 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		075404EE219B871800CF9967 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		075404F3219CD6D400CF9967 /* CellButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		07C9CCAC21A763C40027A0EA /* ConfigColorsAndCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigColorsAndCommandsController.swift; sourceTree = "<group>"; };
+		07C9CCAE21A763E90027A0EA /* ConfigColorsAndCommands.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigColorsAndCommands.xib; sourceTree = "<group>"; };
 		07FCB25E21A4B72A00630D7C /* ConfigSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ConfigSettings.bundle; sourceTree = "<group>"; };
 		07FCB26221A4BAD600630D7C /* NumberOfItemsRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberOfItemsRow.xib; sourceTree = "<group>"; };
 		07FCB26521A4BD2200630D7C /* NumberOfItemsControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfItemsControllerCell.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				5F23211E20B60DDE0033AD79 /* PanelViewController.xib */,
 				5F23212220B60EE00033AD79 /* ConfiguracionViewController.xib */,
 				5F23212620B60F990033AD79 /* ConectarViewController.xib */,
+				07C9CCAE21A763E90027A0EA /* ConfigColorsAndCommands.xib */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				5F23211D20B60DDE0033AD79 /* PanelViewController.swift */,
 				5F23212120B60EE00033AD79 /* ConfiguracionViewController.swift */,
 				5F23212520B60F990033AD79 /* ConectarViewController.swift */,
+				07C9CCAC21A763C40027A0EA /* ConfigColorsAndCommandsController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F23212420B60EE00033AD79 /* ConfiguracionViewController.xib in Resources */,
+				07C9CCAF21A763E90027A0EA /* ConfigColorsAndCommands.xib in Resources */,
 				07FCB26321A4BAD600630D7C /* NumberOfItemsRow.xib in Resources */,
 				5F59F18A20ACF3E300118682 /* Assets.xcassets in Resources */,
 				07FCB25F21A4B72A00630D7C /* ConfigSettings.bundle in Resources */,
@@ -322,6 +329,7 @@
 				5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */,
 				5FD8080020D1B6A40094A9E2 /* CDModel.xcdatamodeld in Sources */,
 				075404EF219B871800CF9967 /* ErrorHandling.swift in Sources */,
+				07C9CCAD21A763C40027A0EA /* ConfigColorsAndCommandsController.swift in Sources */,
 				5F80270720B8B5B800153680 /* Elementos.swift in Sources */,
 				5F23210E20B2339C0033AD79 /* Configuracion.swift in Sources */,
 				5F23211F20B60DDE0033AD79 /* PanelViewController.swift in Sources */,

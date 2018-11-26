@@ -19,19 +19,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
+        //Instanciamos todas las vistas que van a ser parte del TabBar.
         let main = PanelViewController()
         main.tabBarItem = UITabBarItem(title: "Panel", image: #imageLiteral(resourceName: "panelIcon"), tag: 0)
-        
         
         let configuracion = ConfiguracionViewController()
         configuracion.tabBarItem = UITabBarItem(title: "Configuración", image: #imageLiteral(resourceName: "iphoneXconfig"), tag: 1)
         
+        //Creamos un NavigationController para meter navegación desde una de las pestañas.
+        let navigationController = UINavigationController(rootViewController: configuracion)
+        
         let conectar = ConectarViewController()
         conectar.tabBarItem = UITabBarItem(title: "Conectar", image: #imageLiteral(resourceName: "bluetooth"), tag: 2)
         
+        //Las añadimos todas al TabBarController
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [main, configuracion, conectar]
+        tabBarController.viewControllers = [main, navigationController, conectar]
         
+        //Añadimos el TabBarController a la vista principal de la ventana.
         window?.rootViewController = tabBarController
        
         return true

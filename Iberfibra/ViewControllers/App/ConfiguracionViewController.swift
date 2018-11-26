@@ -12,6 +12,7 @@ class ConfiguracionViewController: UIViewController, UITableViewDelegate, UITabl
 
     @IBOutlet weak var tvConfig: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -70,7 +71,10 @@ class ConfiguracionViewController: UIViewController, UITableViewDelegate, UITabl
         case 0:
             print("Has clickado el elemento 1")
         case 1:
-            print("Has clickado el elemento 2")
+            let configColorCommands = ConfigColorsAndCommandsController(nibName: "ConfigColorsAndCommands", bundle: nil)
+            
+            navigationController?.pushViewController(configColorCommands, animated: true)
+            
         default:
             print("No has clicado")
             
