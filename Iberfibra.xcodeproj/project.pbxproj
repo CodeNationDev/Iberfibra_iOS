@@ -13,6 +13,8 @@
 		075404F4219CD6D400CF9967 /* CellButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075404F3219CD6D400CF9967 /* CellButtonCollectionViewCell.swift */; };
 		07C9CCAD21A763C40027A0EA /* ConfigColorsAndCommandsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9CCAC21A763C40027A0EA /* ConfigColorsAndCommandsController.swift */; };
 		07C9CCAF21A763E90027A0EA /* ConfigColorsAndCommands.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C9CCAE21A763E90027A0EA /* ConfigColorsAndCommands.xib */; };
+		07C9CD3321AD138F0027A0EA /* ButtonConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C9CD3221AD138F0027A0EA /* ButtonConfig.xib */; };
+		07C9CD3521AD15A60027A0EA /* ButtonConfigColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9CD3421AD15A60027A0EA /* ButtonConfigColorController.swift */; };
 		07FCB25F21A4B72A00630D7C /* ConfigSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07FCB25E21A4B72A00630D7C /* ConfigSettings.bundle */; };
 		07FCB26321A4BAD600630D7C /* NumberOfItemsRow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FCB26221A4BAD600630D7C /* NumberOfItemsRow.xib */; };
 		07FCB26621A4BD2200630D7C /* NumberOfItemsControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FCB26521A4BD2200630D7C /* NumberOfItemsControllerCell.swift */; };
@@ -38,6 +40,8 @@
 		075404F3219CD6D400CF9967 /* CellButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		07C9CCAC21A763C40027A0EA /* ConfigColorsAndCommandsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigColorsAndCommandsController.swift; sourceTree = "<group>"; };
 		07C9CCAE21A763E90027A0EA /* ConfigColorsAndCommands.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigColorsAndCommands.xib; sourceTree = "<group>"; };
+		07C9CD3221AD138F0027A0EA /* ButtonConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonConfig.xib; sourceTree = "<group>"; };
+		07C9CD3421AD15A60027A0EA /* ButtonConfigColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfigColorController.swift; sourceTree = "<group>"; };
 		07FCB25E21A4B72A00630D7C /* ConfigSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ConfigSettings.bundle; sourceTree = "<group>"; };
 		07FCB26221A4BAD600630D7C /* NumberOfItemsRow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberOfItemsRow.xib; sourceTree = "<group>"; };
 		07FCB26521A4BD2200630D7C /* NumberOfItemsControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfItemsControllerCell.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				07FCB26221A4BAD600630D7C /* NumberOfItemsRow.xib */,
+				07C9CD3221AD138F0027A0EA /* ButtonConfig.xib */,
 			);
 			path = ConfigPanel;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				07FCB26521A4BD2200630D7C /* NumberOfItemsControllerCell.swift */,
+				07C9CD3421AD15A60027A0EA /* ButtonConfigColorController.swift */,
 			);
 			path = ConfigPanel;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				5F23212420B60EE00033AD79 /* ConfiguracionViewController.xib in Resources */,
 				07C9CCAF21A763E90027A0EA /* ConfigColorsAndCommands.xib in Resources */,
 				07FCB26321A4BAD600630D7C /* NumberOfItemsRow.xib in Resources */,
+				07C9CD3321AD138F0027A0EA /* ButtonConfig.xib in Resources */,
 				5F59F18A20ACF3E300118682 /* Assets.xcassets in Resources */,
 				07FCB25F21A4B72A00630D7C /* ConfigSettings.bundle in Resources */,
 				07352CB4219D64AC00AE2D33 /* CellButton.xib in Resources */,
@@ -327,6 +334,7 @@
 				075404F4219CD6D400CF9967 /* CellButtonCollectionViewCell.swift in Sources */,
 				5FD8082520D1B98B0094A9E2 /* CoreDataStack.swift in Sources */,
 				5F2320E520B21FC90033AD79 /* AppDelegate.swift in Sources */,
+				07C9CD3521AD15A60027A0EA /* ButtonConfigColorController.swift in Sources */,
 				5FD8080020D1B6A40094A9E2 /* CDModel.xcdatamodeld in Sources */,
 				075404EF219B871800CF9967 /* ErrorHandling.swift in Sources */,
 				07C9CCAD21A763C40027A0EA /* ConfigColorsAndCommandsController.swift in Sources */,

@@ -45,7 +45,6 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="Stepper" destination="GCs-cM-plt" id="sAZ-8p-BAv"/>
                 <outlet property="number" destination="NA2-pZ-Hgi" id="emx-Mk-pUm"/>
                 <outlet property="stepper" destination="GCs-cM-plt" id="f7u-gq-HVc"/>
                 <outlet property="title" destination="vwo-NU-gwk" id="OwG-0i-9vj"/>

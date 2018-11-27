@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="77" id="0d2-W0-WbB" customClass="ButtonConfigColorController" customModule="Iberfibra" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0d2-W0-WbB" id="7hU-qc-sup">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="ehY-81-z40">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knh-Gv-Lc6" userLabel="lbColor">
+                                <rect key="frame" x="0.0" y="0.0" width="79" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0E-eh-2Ik" userLabel="lbDescripcion">
+                                <rect key="frame" x="148" y="0.0" width="79" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-V4-TMN" userLabel="lbComando">
+                                <rect key="frame" x="296" y="0.0" width="79" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ehY-81-z40" secondAttribute="trailing" id="3Tx-mA-ghC"/>
+                    <constraint firstItem="ehY-81-z40" firstAttribute="top" secondItem="7hU-qc-sup" secondAttribute="top" id="CPk-tj-t62"/>
+                    <constraint firstItem="ehY-81-z40" firstAttribute="top" secondItem="7hU-qc-sup" secondAttribute="top" id="FZN-fg-MrX"/>
+                    <constraint firstItem="ehY-81-z40" firstAttribute="leading" secondItem="7hU-qc-sup" secondAttribute="leading" id="NLE-CP-zg6"/>
+                    <constraint firstAttribute="trailing" secondItem="ehY-81-z40" secondAttribute="trailing" id="VFN-ID-t4p"/>
+                    <constraint firstAttribute="bottom" secondItem="ehY-81-z40" secondAttribute="bottom" id="Vmg-Gf-R6x"/>
+                    <constraint firstAttribute="bottom" secondItem="ehY-81-z40" secondAttribute="bottom" id="hS1-tc-7lN"/>
+                    <constraint firstItem="ehY-81-z40" firstAttribute="leading" secondItem="7hU-qc-sup" secondAttribute="leading" id="iXj-xJ-LyE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbColor" destination="Knh-Gv-Lc6" id="Tia-xA-rwN"/>
+                <outlet property="lbComando" destination="HR7-V4-TMN" id="69R-ug-RVY"/>
+                <outlet property="lbDescripcion" destination="W0E-eh-2Ik" id="ig2-3h-XRD"/>
+            </connections>
+            <point key="canvasLocation" x="128.80000000000001" y="308.9955022488756"/>
+        </tableViewCell>
+    </objects>
+</document>

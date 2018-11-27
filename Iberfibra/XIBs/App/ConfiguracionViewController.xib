@@ -21,9 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9F5-0I-6Sm" userLabel="tbConfig">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9F5-0I-6Sm" userLabel="tbConfig">
                     <rect key="frame" x="0.0" y="154" width="375" height="513"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEg-EP-diE">
@@ -45,7 +44,11 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="9F5-0I-6Sm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0Hf-Ye-ovL"/>
+                <constraint firstItem="9F5-0I-6Sm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VLX-Il-gI7"/>
+                <constraint firstItem="9F5-0I-6Sm" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="WFp-Gf-6cl"/>
                 <constraint firstItem="WEg-EP-diE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="dTu-Ot-OpH"/>
+                <constraint firstItem="9F5-0I-6Sm" firstAttribute="top" secondItem="WEg-EP-diE" secondAttribute="bottom" constant="49" id="irY-lR-e6x"/>
                 <constraint firstItem="WEg-EP-diE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="lAy-rO-QSU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
